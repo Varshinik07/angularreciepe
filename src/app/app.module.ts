@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddreciepeComponent } from './addreciepe/addreciepe.component';
 import { ViewreciepeComponent } from './viewreciepe/viewreciepe.component';
 import{HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 const appRoutes:Routes=[
   {
     path:"",component:AddreciepeComponent
@@ -27,7 +28,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
